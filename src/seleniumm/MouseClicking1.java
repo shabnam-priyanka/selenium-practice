@@ -22,7 +22,7 @@ public class MouseClicking1 {
 		
 		Actions a=new Actions(F);
 		WebElement button = F.findElement(By.id("rightClickBtn"));
-		a.contextClick(button).perform();
+		a.contextClick(button).perform();//right click
 		
 	}
 }

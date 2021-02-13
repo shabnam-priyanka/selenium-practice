@@ -15,7 +15,7 @@ public class NewPractice {
 		WebElement radio= F.findElement(By.className("custom-control-label"));
 		boolean select =radio.isSelected();
 		System.out.print(select);
-		if(select ==false)// if the radio button not selected then it will click
+		if(select ==false)// if the RADIO button not selected then it will click
 		{
 			radio.click();
 		}
