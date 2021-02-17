@@ -15,7 +15,7 @@ public class CheckBox1 {
 		WebElement check = F.findElement(By.cssSelector("label[for ='hobbies-checkbox-1']"));
 		boolean isEnabled =check.isEnabled();
 		//System.out.print(select);
-		if(isEnabled ==true)// if the radio button not selected then it will click
+		if(isEnabled ==true)// CHECKBOX
 		{
 			check.click();
 		}

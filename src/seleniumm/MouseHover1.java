@@ -15,12 +15,12 @@ public class MouseHover1 {
 		F.get("https://www.demoqa.com/automation-practice-form");
 		
 		
-		F.manage().window().maximize();
+		F.manage().window().maximize(); // maximize 
 		F.manage().timeouts().implicitlyWait(120,TimeUnit.SECONDS); //implicit wait
 		
-		F.findElement(By.id("firstName")).sendKeys("Sabnam");
-		F.findElement(By.xpath("//input[@id ='lastName']")).sendKeys("priyanka");
-		F.findElement(By.xpath("//input[@id = 'userEmail']")).sendKeys("shabnam@gmail.com");
+		F.findElement(By.id("firstName")).sendKeys("Sabnam"); // putting first name in the field
+		F.findElement(By.xpath("//input[@id ='lastName']")).sendKeys("priyanka"); //putting last name in the field
+		F.findElement(By.xpath("//input[@id = 'userEmail']")).sendKeys("shabnam@gmail.com"); // putting email id in the input box
 		Thread.sleep(2000);
 		
 		//F.findElement(By.id("custom-control-label")).click();

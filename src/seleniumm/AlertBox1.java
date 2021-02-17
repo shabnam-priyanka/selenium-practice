@@ -11,7 +11,7 @@ public class AlertBox1 {
 		F.get("http://demo.guru99.com/test/delete_customer.php");
 		F.manage().window().maximize();
 		
-		F.findElement(By.name("cusid")).sendKeys(new String[]{"53920"});
+		F.findElement(By.name("cusid")).sendKeys(new String[]{"53920"}); //why we writing new String []
 		F.findElement(By.name("submit")).submit();
 		//Thread.sleep(2000);
 	    Alert alert =F.switchTo().alert();
