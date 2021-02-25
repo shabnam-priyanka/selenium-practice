@@ -12,13 +12,15 @@ public class RadioButton1 {
 		F.manage().window().maximize();
 		
 		WebElement radio= F.findElement(By.className("custom-control-label"));
-		boolean select =radio.isSelected();
+		boolean select =radio.isSelected(); //isSelected(): Checks whether a checkbox is selected or not.
 		System.out.print(select);
-		if(select ==false)// if the RADIO button not selected then it will click
+		if(select ==false) //performing click operation only if element is not selected
 		{
-			radio.click();
+			radio.click();  
+			
 		}
-		
+	
+
 		
 		
 		

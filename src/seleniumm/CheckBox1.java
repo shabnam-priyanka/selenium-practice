@@ -13,9 +13,9 @@ public class CheckBox1 {
 		
 		//WebElement check = F.findElement(By.className("custom-control-level[4]")); with this it didn't work 	qw
 		WebElement check = F.findElement(By.cssSelector("label[for ='hobbies-checkbox-1']"));
-		boolean isEnabled =check.isEnabled();
+		boolean isEnabled =check.isEnabled(); // isEnabled(): Checks whether a checkbox is enabled or not
 		//System.out.print(select);
-		if(isEnabled ==true)// CHECKBOX
+		if(isEnabled ==true)// 	////performing click operation if element is not checked
 		{
 			check.click();
 		}
